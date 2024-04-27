@@ -1,0 +1,125 @@
+.dashboard{
+    width: calc(100vw - 350px);
+    margin-left: 350px;
+}
+.dashboard .topnav{
+    position: absolute;
+    width: calc(100vw - 350px);
+    height: 75px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.dashboard .topnav h1{
+    margin-left: 50px;
+    font-size: 40px;
+}
+.dashboard .mainContent{
+    height: calc(100vh - 110px);
+    width: 90%;
+    margin-left: 5%;
+    /* border: solid 2px red; */
+    margin-top: 100px;
+}
+.dashboard .mainContent .Mtop{
+    width: 100%;
+    height: 50%;
+    /* border: solid 2px green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard .mainContent .Mtop .totalEmailActive{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: solid 10px rgb(46, 223, 46);
+    box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
+}
+.dashboard .mainContent .Mtop .totalEmailActive .activeEmailNu{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 100px;
+    color:rgb(19, 133, 19) ;
+}
+.dashboard .mainContent .Mtop .totalEmailActive .title{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+
+.dashboard .mainContent .Mtop .totalEmailBlock{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: solid 10px rgb(223, 46, 46);
+    box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
+    margin-left: 100px;
+}
+.dashboard .mainContent .Mtop .totalEmailBlock .blockEmailNu{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 100px;
+    color:rgb(133, 19, 19) ;
+}
+.dashboard .mainContent .Mtop .totalEmailBlock .title{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.dashboard .mainContent .Mtop .totalEmail{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: solid 10px rgb(0, 0, 0);
+    box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
+    margin-left: 100px;
+}
+.dashboard .mainContent .Mtop .totalEmail .EmailNu{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 100px;
+    color:rgb(0, 0, 0) ;
+}
+.dashboard .mainContent .Mtop .totalEmail .title{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.dashboard .mainContent .Mbottom{
+    width: 100%;
+    height: 50%;
+    /* border: solid 2px green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard .mainContent .Mbottom .currentProcesing{
+    height: 300px;
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
+    margin-left: 100px;
+}
+.dashboard .mainContent .Mbottom .currentProcesing h1{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    border-bottom: solid 1px black;
+}
+.dashboard .mainContent .Mbottom .currentProcesing .currentProcessDisplay p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+

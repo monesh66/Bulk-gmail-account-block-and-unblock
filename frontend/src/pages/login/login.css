@@ -1,0 +1,170 @@
+body{
+    background-color: #CAF0F8;
+}
+.login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.loginbox{
+    height: 600px;
+    width: 500px;
+    background-color: #F1F1F2;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0px 0px 50px 5px;
+}
+.boxtitle{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.logobox{
+    height: 300px;
+}
+.usernamebox{
+    position: relative;
+}
+.personicon{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: rgb(113, 113, 113);
+}
+.username{
+    height: 40px;
+    width: 300px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+.passwordbox{
+    position: relative;
+    margin-top: 20px;
+}
+.passicon{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: rgb(113, 113, 113);
+}
+.password{
+    height: 40px;
+    width: 300px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-left: 50px;
+}
+.submit{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(8, 13, 140);
+    margin-top: 40px;
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+}
+.submit:hover{
+    background-color: blue;
+    transition: 200ms;
+    cursor: pointer;
+}
+.loading{
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+}
+@keyframes loading_animation{
+    0%{rotate: 0deg;}
+    70%{rotate: 180deg;}
+    100%{rotate: 360deg;}
+}
+.loadingicon{
+    animation: loading_animation 1s linear infinite;
+}
+.loginsuccess{
+    height: 100px;
+    width: 320px;
+    
+}
+.successmsg{
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(12, 91, 12);
+    background-color: rgb(0, 255, 0);
+}
+.redirectmsg{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.popup{
+    height: 75px;
+    width: 550px;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 93, 93);
+    font-family: "Roboto", sans-serif;
+    border-right: solid 5px red;
+    border-left: solid 5px red;
+    border-radius: 5px;
+}
+.popupClose{
+    font-size: 50px;
+    margin-left: 10px;
+    color: black;
+}
+.popupClose:hover{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+
+.mainLoading{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0px 0px 50px 2px;
+}
+.mainLoadingIcon{
+    font-size: 100px;
+    animation: mainLoading 1s linear infinite ;
+    margin-bottom: 10px;
+}
+@keyframes mainLoading{
+    0%{rotate: 0deg;}
+    50%{rotate: 180deg;}
+    100%{rotate: 369deg;}
+}
+
