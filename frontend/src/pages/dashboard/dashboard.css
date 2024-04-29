@@ -39,16 +39,17 @@
     border-radius: 10px;
     border-left: solid 10px rgb(46, 223, 46);
     box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .dashboard .mainContent .Mtop .totalEmailActive .activeEmailNu{
-    margin-top: 50px;
-    margin-left: 50px;
     font-size: 100px;
     color:rgb(19, 133, 19) ;
 }
 .dashboard .mainContent .Mtop .totalEmailActive .title{
     margin-top: 60px;
-    margin-left: 10px;
     font-size: 25px;
 }
 
@@ -61,16 +62,17 @@
     border-left: solid 10px rgb(223, 46, 46);
     box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .dashboard .mainContent .Mtop .totalEmailBlock .blockEmailNu{
-    margin-top: 50px;
-    margin-left: 80px;
     font-size: 100px;
     color:rgb(133, 19, 19) ;
 }
 .dashboard .mainContent .Mtop .totalEmailBlock .title{
     margin-top: 60px;
-    margin-left: 10px;
     font-size: 25px;
 }
 
@@ -82,16 +84,17 @@
     border-left: solid 10px rgb(0, 0, 0);
     box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .dashboard .mainContent .Mtop .totalEmail .EmailNu{
-    margin-top: 50px;
-    margin-left: 80px;
     font-size: 100px;
     color:rgb(0, 0, 0) ;
 }
 .dashboard .mainContent .Mtop .totalEmail .title{
     margin-top: 60px;
-    margin-left: 10px;
     font-size: 25px;
 }
 
@@ -104,22 +107,60 @@
     justify-content: center;
 }
 .dashboard .mainContent .Mbottom .currentProcesing{
-    height: 300px;
-    width: 650px;
+    height: 350px;
+    width: 750px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 20px 35px rgb(0, 0, 0, 0.2);
-    margin-left: 100px;
+    margin-left: 50px;
 }
-.dashboard .mainContent .Mbottom .currentProcesing h1{
-    margin-top: 10px;
-    padding-left: 10px;
-    width: calc(100% - 10px);
+.dashboard .Mbottom .currentProcesing .header{
+    width: 100%;
+    height: 50px;
     border-bottom: solid 1px black;
+    display: flex;
+    align-items: center;
 }
-.dashboard .mainContent .Mbottom .currentProcesing .currentProcessDisplay p{
-    margin-top: 20px;
+.dashboard .Mbottom .currentProcesing .header h1{
     margin-left: 20px;
-    font-size: 20px;
+}
+.dashboard .Mbottom .currentProcesing .header .viewButton{
+    padding: 5px;
+    background-color: rgb(0, 215, 0);
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 320px;
+}
+.dashboard .Mbottom .currentProcesing .header .viewButton:hover{
+    cursor: pointer;
+    padding: 8px;
+    transition: 200ms;
+    background-color: rgb(54, 242, 54);
+}
+.dashboard .Mbottom .currentProcesing .currentProcessDisplay {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
 }
 
+
+.dashboard .contentLoadingAnimation{
+    height: 50px;
+    width: 90%;
+    background-color: black;
+    border-radius: 50px;
+    border: solid 1px rgb(0, 0, 0);
+
+}
+.dashboard .c1{
+    height: 100px;
+    width: 70%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.dashboard .c2{
+    height: 20px;
+    width: 90%;
+    margin-top: 60px;
+}
