@@ -8,7 +8,7 @@ function Dashboard() {
     const [isContentLoadedu, setIsContentLoadedu] = useState(false);
     const [runOnes, setRunOnes] = useState(false)
     var isContentLoaded = isContentLoadedu
-    
+
     function setIsContentLoaded(value) {
         isContentLoaded = value;
         setIsContentLoadedu(true);
@@ -22,7 +22,7 @@ function Dashboard() {
             }, 3000)
         }
     }
-    
+
     function animateLoading() {
         var interval = 4;
         var timeLine = 0;
@@ -136,19 +136,110 @@ function Dashboard() {
                             )}
                             {!isContentLoaded && (
                                 <>
-                                    <div className="contentLoadingAnimation c3"></div>
-                                    <div className="contentLoadingAnimation c4"></div>
-                                    <div className="contentLoadingAnimation c5"></div>
-                                    <div className="contentLoadingAnimation c6"></div>
-                                    <div className="contentLoadingAnimation c7"></div>
+                                    <div className="contentLoadingAnimation c3 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c4 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c5 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c6 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c7 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c8 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c9 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
                                 </>
                             )}
                         </div>
                     </div>
                     <div className="currentProcesing">
-                        <h1>Scheduled Task</h1>
+                        <div className="header">
+                            <h1>Scheduled Task</h1>
+                            <div className="viewButton"><p>View</p></div>
+                        </div>
+
                         <div className="currentProcessDisplay">
-                            <p>Nothing Scheduled Yet...</p>
+                            {isContentLoaded && (
+                                <>
+                                    <p>Nothing Scheduled Yet...</p>
+                                </>
+                            )}
+                            {!isContentLoaded && (
+                                <>
+                                    <div className="contentLoadingAnimation c3 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c4 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c5 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c6 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c7 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c8 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                    <div className="contentLoadingAnimation c9 t1">
+                                        <div className="loadingIcon"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBox"></div>
+                                        <div className="loadingBoxSmall"></div>
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>

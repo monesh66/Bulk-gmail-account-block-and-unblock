@@ -8,6 +8,7 @@ import Navbar from "../navbar/navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Dashboard from '../dashboard/dashboard';
+import Search from '../search/search';
 
 function Main() {
     const [isAuthed, setIsAuthed] = useState("checking");
@@ -86,6 +87,11 @@ function Main() {
                     {getLocation.pathname === "/dashboard" && (
                         <>
                             <Dashboard />
+                        </>
+                    )}
+                    {getLocation.pathname === "/search" && (
+                        <>
+                            <Search />
                         </>
                     )}
                 </>

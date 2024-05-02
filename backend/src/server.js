@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const userAuthRouter = require('./api/router/userAuthRouter');
+const DashboardRouter = require('./api/router/dashboradRouter');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
@@ -35,6 +36,7 @@ const connectDB = async()=>{
 
 // api
 server.use("/api/v1/auth", userAuthRouter);
+server.use("/api/v1/dashboard", DashboardRouter);
 
 
 

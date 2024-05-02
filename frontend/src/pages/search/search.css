@@ -1,0 +1,210 @@
+.search{
+    width: calc(100vw - 350px);
+    margin-left: 350px;
+}
+.search .topnav{
+    position: absolute;
+    width: calc(100vw - 350px);
+    height: 75px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.search .topnav h1{
+    margin-left: 50px;
+    font-size: 40px;
+}
+.search .mainContent{
+    height: calc(100vh - 200px);
+    width: 90%;
+    margin-left: 5%;
+    /* border: solid 2px red; */
+    margin-top: 100px;
+   
+}
+.search .searchSection{
+    top: 100px;
+    height: 50px;
+    width: 800px;
+    position: absolute;
+}
+.search .searchBarSection{
+    position: absolute;
+    height: 40px;
+    width: 700px;
+}
+.search .searchBarSection input{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    padding-left: 60px;
+    font-size: 25px;
+    border: solid 2px black;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.2);
+}
+.search .searchBarSection .searchIcon{
+    position: absolute;
+    top: 5px;
+    font-size: 40px;
+    left: 10px;
+}
+.search .searchList{
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: rgb(230, 230, 230);
+    margin-top: 200px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    padding-left: 10px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.2);
+}
+.search .searchList .table{
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+.search .searchList .table .tableHeader{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.search .searchList .table .tableHeader div, .search .table .tr div, .search .table .t1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search .table .tr p{
+    font-size: 20px;
+}
+.search .searchList .table .tableHeader .headerId , .search .table  .tdId{
+    width: 5%;
+}
+.search .searchList .table .tableHeader .headerProfile , .search .table  .tdProfile{
+    width: 10%;
+}
+.search .searchList .table .tableHeader .headerGmail , .search .table  .tdGmail{
+    width: 25%;
+}
+.search .searchList .table .tableHeader .headerName , .search .table  .tdName{
+    width: 25%;
+}
+.search .searchList .table .tableHeader .headerRollNumber , .search .table  .tdRollNumber{
+    width: 15%;
+}
+.search .searchList .table .tableHeader .headerAccountStatus , .search .table  .tdAccountStatus{
+    width: 10%;
+}
+.search .searchList .table .tableHeader .headerView , .search .table  .tdView{
+    width: 10%;
+}
+.search .searchList .table .tr{
+    width: 100%;
+    height: 70px;
+    /* border: solid 1px black; */
+    /* margin-top: 10px; */
+    border-bottom: 1px solid black;
+    display: flex;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.search .searchList .table .tr:hover{
+    background-color: rgb(174, 174, 174);
+    transition: 100ms;
+}
+.search .searchList .table .tr .tdView .eyeIcon{
+    font-size: 50px;
+}
+.search .searchList .table .tr .tdView .eyeIcon:hover{
+    color: blue;
+    cursor: pointer;
+}
+.search .searchList .table .tr .tableProfileIcon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: solid 1px black;
+}
+.search .searchList .table .tr .tableStatus{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+.search .contentLoadingAnimationl{
+    height: 50px;
+    width: 90%;
+    background-color: black;
+    border-radius: 50px;
+    border: solid 1px rgb(0, 0, 0);
+}
+.search .t1{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+
+    align-items: center;
+}
+.search .t1 .loadingid{
+    height: 20px;
+    width: 30px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.search .t1 .loadingProfile{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 40px;
+    border: solid 1px black;
+}
+.search .t1 .loadingGmail{
+    height: 20px;
+    width: 300px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.search .t1 .loadingName{
+    height: 20px;
+    width: 250px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.search .t1 .loadingRollNumber{
+    height: 20px;
+    width: 150px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.search .t1 .loadingAccountStatus{
+    height: 20px;
+    width: 100px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 10px;
+    border: solid 1px black;
+}
+.search .t1 .loadingView{
+    height: 40px;
+    width: 60px;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 5px;
+    border: solid 1px black;
+}

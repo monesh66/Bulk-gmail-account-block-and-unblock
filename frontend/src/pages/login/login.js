@@ -223,7 +223,7 @@ function Login() {
                 ) : (
                     <div className="loginsuccess">
                         <div className="successmsg">
-                            <h1>Successfully Loged-in</h1>
+                            <h1>Successfully Logged-in</h1>
                         </div>
                     </div>
                 )}
