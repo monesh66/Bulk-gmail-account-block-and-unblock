@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Dashboard from '../dashboard/dashboard';
 import Search from '../search/search';
+import Block from '../block/block';
 
 function Main() {
     const [isAuthed, setIsAuthed] = useState("checking");
@@ -92,6 +93,11 @@ function Main() {
                     {getLocation.pathname === "/search" && (
                         <>
                             <Search />
+                        </>
+                    )}
+                    {getLocation.pathname === "/block" && (
+                        <>
+                            <Block />
                         </>
                     )}
                 </>

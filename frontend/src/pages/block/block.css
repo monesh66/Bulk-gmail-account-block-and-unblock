@@ -1,0 +1,19 @@
+.block{
+    width: calc(100vw - 350px);
+    margin-left: 350px;
+}
+.block .topnav{
+    position: absolute;
+    width: calc(100vw - 350px);
+    height: 75px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.block .topnav h1{
+    margin-left: 50px;
+    font-size: 40px;
+}

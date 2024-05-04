@@ -11,10 +11,12 @@ function Search() {
     const navigate = useNavigate();
 
     const [searchContent, setSearchContent] = useState("");
+    const [pervSearchContent, setPervSearchContent] = useState("")
     const data = [
         {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -24,6 +26,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -32,6 +35,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -40,6 +44,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -48,6 +53,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -56,6 +62,7 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
@@ -65,6 +72,7 @@ function Search() {
         {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -74,6 +82,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -82,6 +91,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -90,6 +100,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -98,6 +109,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -106,14 +118,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -123,6 +138,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -131,6 +147,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -139,6 +156,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -147,6 +165,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -155,14 +174,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -172,6 +194,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -180,6 +203,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -188,6 +212,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -196,6 +221,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -204,14 +230,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -221,6 +250,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -229,6 +259,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -237,6 +268,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -245,6 +277,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -253,14 +286,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -270,6 +306,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -278,6 +315,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -286,6 +324,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -294,6 +333,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -302,14 +342,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -319,6 +362,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -327,6 +371,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -335,6 +380,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -343,6 +389,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -351,14 +398,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -368,6 +418,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -376,6 +427,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -384,6 +436,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -392,6 +445,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -400,14 +454,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -417,6 +474,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -425,6 +483,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -433,6 +492,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -441,6 +501,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -449,14 +510,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -466,6 +530,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -474,6 +539,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -482,6 +548,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -490,6 +557,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -498,14 +566,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -515,6 +586,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -523,6 +595,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -531,6 +604,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -539,6 +613,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -547,14 +622,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -564,6 +642,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -572,6 +651,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -580,6 +660,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -588,6 +669,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -596,14 +678,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -613,6 +698,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -621,6 +707,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -629,6 +716,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -637,6 +725,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -645,14 +734,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -662,6 +754,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -670,6 +763,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -678,6 +772,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -686,6 +781,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -694,14 +790,17 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
-        }, {
+        },
+        {
             id: 2344,
             profile: "M",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUZUuBU5s8N6EBP_cK8Ac0wqTSD-imC2oZDiVAoXVIQnTvv7rs=s200-p",
             color: "rgb(0, 213, 0)",
             gmail: "moneshvel.al22@bitsathy.ac.in",
             name: "Moneshvel S T",
@@ -711,6 +810,7 @@ function Search() {
         {
             id: 2345,
             profile: "V",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjXZxYNyNy-SKmRa3nWe0MfSFAvh0-18PDpGxCyNvDgf79jPIVQ=s200-p",
             color: "rgb(255, 0, 242)",
             gmail: "varun.cs22@bitsathy.ac.in",
             name: "Varunesh D",
@@ -719,6 +819,7 @@ function Search() {
         }, {
             id: 4325,
             profile: "H",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjW2aJu-mmtyQUE4-E77MxYp5vBkT0Dl8Fl3Rk4jkvh-Y2oQfN4=s200-p-k-rw-no",
             color: "rgb(0, 140, 255)",
             gmail: "harish.al22@bitsathy.ac.in",
             name: "Harish R",
@@ -727,6 +828,7 @@ function Search() {
         }, {
             id: 134,
             profile: "S",
+            profileURL: "https://lh3.googleusercontent.com/a-/ALV-UjUliCL7KeVqjs22ZsyuCfYwRQe0DJCoHm6-IPwmHvSRk10CTSsv=s200-p",
             color: "rgb(255, 166, 0)",
             gmail: "saravanan.cb22@bitsathy.ac.in",
             name: "Saravanan S",
@@ -735,6 +837,7 @@ function Search() {
         }, {
             id: 3425,
             profile: "N",
+            profileURL: "Null",
             color: "rgb(255, 0, 242)",
             gmail: "nishok.al22@bitsathy.ac.in",
             name: "Nishok T",
@@ -743,64 +846,22 @@ function Search() {
         }, {
             id: 5234,
             profile: "R",
-            color: "rgb(0, 213, 0)",
-            gmail: "Ram.al22@bitsathy.ac.in",
-            name: "Ram K",
-            rollNumber: "7376222AL975",
-            accountStatus: "Active",
-        }, {
-            id: 2344,
-            profile: "M",
-            color: "rgb(0, 213, 0)",
-            gmail: "moneshvel.al22@bitsathy.ac.in",
-            name: "Moneshvel S T",
-            rollNumber: "7376222AL174",
-            accountStatus: "Blocked",
-        },
-        {
-            id: 2345,
-            profile: "V",
-            color: "rgb(255, 0, 242)",
-            gmail: "varun.cs22@bitsathy.ac.in",
-            name: "Varunesh D",
-            rollNumber: "7376222CS345",
-            accountStatus: "Active",
-        }, {
-            id: 4325,
-            profile: "H",
-            color: "rgb(0, 140, 255)",
-            gmail: "harish.al22@bitsathy.ac.in",
-            name: "Harish R",
-            rollNumber: "7376222AL139",
-            accountStatus: "Blocked",
-        }, {
-            id: 134,
-            profile: "S",
-            color: "rgb(255, 166, 0)",
-            gmail: "saravanan.cb22@bitsathy.ac.in",
-            name: "Saravanan S",
-            rollNumber: "7376222CB146",
-            accountStatus: "Active",
-        }, {
-            id: 3425,
-            profile: "N",
-            color: "rgb(255, 0, 242)",
-            gmail: "nishok.al22@bitsathy.ac.in",
-            name: "Nishok T",
-            rollNumber: "7376222AL668",
-            accountStatus: "Active",
-        }, {
-            id: 5234,
-            profile: "R",
+            profileURL: "Null",
             color: "rgb(0, 213, 0)",
             gmail: "Ram.al22@bitsathy.ac.in",
             name: "Ram K",
             rollNumber: "7376222AL975",
             accountStatus: "Active",
         },
+        
     ]
     useEffect(() => {
-        console.log(searchContent);
+        if (searchContent.length < 51) {
+            setPervSearchContent(searchContent)
+        }
+        else {
+            document.getElementById("searchBar").value = pervSearchContent;
+        }
     }, [searchContent])
 
 
@@ -881,7 +942,7 @@ function Search() {
             <div className="mainContent">
                 <div className="searchSection">
                     <div className="searchBarSection">
-                        <input type="text" placeholder='Search for Gmail, Name, Roll Number' onChange={(e) => { setSearchContent(e.target.value) }} />
+                        <input type="text" id='searchBar' placeholder='Search for Gmail, Name, Roll Number' onChange={(e) => { setSearchContent(e.target.value) }} />
                         <MdOutlineSearch className='searchIcon' />
                     </div>
                 </div>
@@ -912,9 +973,10 @@ function Search() {
                         </div>
                         {isContentLoaded ? (data.map((item) => (
                             <SearchListTable
-                                key={item.id}
+                                //key={item.id}
                                 id={item.id}
                                 profile={item.profile}
+                                profileURL = {item.profileURL}
                                 color={item.color}
                                 gmail={item.gmail}
                                 name={item.name}

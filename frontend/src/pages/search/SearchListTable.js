@@ -2,7 +2,7 @@ import React from 'react';
 import { IoMdEye } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 
-function SearchListTable({ id, profile, color, gmail, name, rollNumber, accountStatus }) {
+function SearchListTable({ id, profile, profileURL, color, gmail, name, rollNumber, accountStatus }) {
     const navigate = useNavigate();
 
     return (
@@ -11,7 +11,11 @@ function SearchListTable({ id, profile, color, gmail, name, rollNumber, accountS
                 <p>{id}</p>
             </div>
             <div className="tdProfile">
-                <p className='tableProfileIcon' style={{ backgroundColor: color }}>{profile}</p>
+                {profileURL !== "Null" ? (
+                    <img style={{ height: "40px", borderRadius: "40px", border: "solid 2px black" }} src={profileURL} alt="Profile Img" />
+                ) : (
+                    <p className='tableProfileIcon' style={{ backgroundColor: color }}>{profile}</p>
+                )}
             </div>
             <div className="tdGmail">
                 <p>{gmail}</p>
@@ -24,9 +28,9 @@ function SearchListTable({ id, profile, color, gmail, name, rollNumber, accountS
             </div>
             <div className="tdAccountStatus">
                 {accountStatus === "Active" ? (
-                    <p className='tableStatus' style={{backgroundColor: "rgb(0, 236, 0)"}}>{accountStatus}</p>
+                    <p className='tableStatus' style={{ backgroundColor: "rgb(0, 236, 0)" }}>{accountStatus}</p>
                 ) : (
-                    <p className='tableStatus' style={{backgroundColor: "rgb(255, 50, 50)"}}>{accountStatus}</p>
+                    <p className='tableStatus' style={{ backgroundColor: "rgb(255, 50, 50)" }}>{accountStatus}</p>
                 )}
 
             </div>
